@@ -1,17 +1,52 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import Sdata from './components/Sdata';
+import App from './components/App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+// function Card(props){
+//   return (
+//     <>
+//     <div className='cards'>
+//       <div className='card'>
+//         <img src={props.imgsrc} alt='mypic' className='card_img'/>
+//         <div className='card_info'>
+//           <span className='card_category'>{props.sname}</span>
+//           <h3 className='card_title'>{props.title}</h3>
+//           <a href={props.link} target="__blank"><button>Watch Now!</button></a>
+//         </div>
+//       </div>
+//     </div>
+//   </>
+//   );
+// }
+
+// function nCard(val){
+//   return <>
+//     <Card
+//       imgsrc={val.image}
+//       sname={val.sname}
+//       title={val.title}
+//       link={val.link}
+//     />
+//   </>
+// }
+
+
+
+ReactDOM.render(
+  // <>
+  // {Sdata.map(nCard)}
+  // </>
+  <App />
+  ,document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+{/* <Card 
+    imgsrc={Sdata[0].image}
+    sname={Sdata[0].sname}
+    title={Sdata[0].title}
+    link={Sdata[0].link}
+  /> */}
